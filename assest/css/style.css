@@ -1,0 +1,38 @@
+.main-wrapper {
+    background-color: aqua;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.sidebar {
+    background-color: brown;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: all 0.3s ease;
+}
+
+.sidebar.active {
+    width: 250px;
+}
+
+.left-content {
+    margin-left: 250px;
+}
+
+#toggle {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    background-color: red;
+    border: 0;
+}
+
+@media (max-width:1199.98px) {
+    .sidebar {
+        width: 150px;
+    }
+}
